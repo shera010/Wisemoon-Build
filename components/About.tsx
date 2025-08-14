@@ -33,12 +33,12 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50/30">
+    <section id="about" className="py-20 bg-gradient-to-br from-slate-50 to-[#EAD32C]/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Content */}
           <div>
-            <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center px-4 py-2 bg-[#EAD32C]/20 text-[#B8860B] rounded-full text-sm font-medium mb-6">
               Our Story
             </div>
             
@@ -66,7 +66,7 @@ const About = () => {
               </p>
             </div>
 
-            <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Button className="bg-gradient-to-r from-[#EAD32C] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#C19A10] text-white px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
               Discover Our Process
             </Button>
           </div>
@@ -85,7 +85,7 @@ const About = () => {
               {/* Floating Achievement Card */}
               <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl border border-slate-200">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">500+</div>
+                  <div className="text-3xl font-bold text-[#EAD32C] mb-1">500+</div>
                   <div className="text-sm text-slate-600">Happy Clients</div>
                   <div className="flex justify-center mt-2">
                     {[...Array(5)].map((_, i) => (
@@ -102,9 +102,9 @@ const About = () => {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {achievements.map((achievement, index) => (
             <div key={index} className="text-center group">
-              <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 group-hover:border-blue-200">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors">
-                  <div className="text-blue-600">
+              <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 group-hover:border-[#EAD32C]/50">
+                <div className="w-12 h-12 bg-[#EAD32C]/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-[#EAD32C]/30 transition-colors">
+                  <div className="text-[#B8860B]">
                     {achievement.icon}
                   </div>
                 </div>
@@ -128,9 +128,9 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value, index) => (
             <div key={index} className="text-center group">
-              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 group-hover:border-blue-200 h-full">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-blue-200 group-hover:to-indigo-200 transition-all duration-300">
-                  <div className="text-blue-600">
+              <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 group-hover:border-[#EAD32C]/50 h-full">
+                <div className="w-16 h-16 bg-gradient-to-br from-[#EAD32C]/20 to-[#D4AF37]/20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:from-[#EAD32C]/30 group-hover:to-[#D4AF37]/30 transition-all duration-300">
+                  <div className="text-[#B8860B]">
                     {value.icon}
                   </div>
                 </div>
