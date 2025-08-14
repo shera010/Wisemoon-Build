@@ -3,9 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background: 180 20% 98%;
+  --foreground: 180 20% 10%;
+  --card: 180 20% 95%;
+  --card-foreground: 180 20% 10%;
+  --popover: 180 20% 95%;
+  --popover-foreground: 180 20% 10%;
+  --primary: 175 72% 41%;      /* 🔑 the exact turquoise */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 175 72% 90%;
+  --secondary-foreground: 175 72% 20%;
+  --muted: 180 20% 90%;
+  --muted-foreground: 180 20% 45%;
+  --accent: 175 72% 85%;
+  --accent-foreground: 175 72% 15%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 180 20% 80%;
+  --input: 180 20% 80%;
+  --ring: 175 72% 41%;
+  --chart-1: 175 72% 41%;
+  --chart-2: 160 60% 45%;
+  --chart-3: 30 80% 55%;
+  --chart-4: 280 65% 60%;
+  --chart-5: 340 75% 55%;
+  --radius: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
