@@ -77,11 +77,11 @@ const FeaturedProjects = () => {
   const project = projects[currentProject];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50/30">
+    <section id="projects" className="py-20 bg-gradient-to-br from-slate-50 to-[#EAD32C]/10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center px-4 py-2 bg-[#EAD32C]/20 text-[#B8860B] rounded-full text-sm font-medium mb-4">
             Featured Work
           </div>
           <h2 className="text-4xl font-bold text-slate-900 mb-6">
@@ -162,7 +162,7 @@ const FeaturedProjects = () => {
             {/* Featured Badge */}
             {project.featured && (
               <div className="absolute top-4 left-1/2 -translate-x-1/2">
-                <Badge className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2">
+                <Badge className="bg-gradient-to-r from-[#EAD32C] to-[#D4AF37] text-white px-4 py-2">
                   Featured Project
                 </Badge>
               </div>
@@ -175,7 +175,7 @@ const FeaturedProjects = () => {
               {/* Main Content */}
               <div className="lg:col-span-2">
                 <div className="mb-4">
-                  <Badge className="bg-blue-100 text-blue-800 mb-4">
+                  <Badge className="bg-[#EAD32C]/20 text-[#B8860B] mb-4">
                     {project.category}
                   </Badge>
                   <h3 className="text-3xl font-bold text-slate-900 mb-4">
@@ -194,7 +194,7 @@ const FeaturedProjects = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {project.features.map((feature, index) => (
                       <div key={index} className="flex items-center text-slate-600">
-                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-[#EAD32C] rounded-full mr-3 flex-shrink-0" />
                         <span className="text-sm">{feature}</span>
                       </div>
                     ))}
@@ -202,7 +202,7 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* CTA */}
-                <Button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
+                <Button className="bg-gradient-to-r from-[#EAD32C] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#C19A10] text-white px-6 py-3 shadow-lg hover:shadow-xl transition-all duration-300">
                   <Eye className="w-4 h-4 mr-2" />
                   View More Projects
                 </Button>
@@ -215,8 +215,8 @@ const FeaturedProjects = () => {
                   
                   <div className="space-y-6">
                     <div className="flex items-center">
-                      <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                        <MapPin className="w-5 h-5 text-blue-600" />
+                      <div className="w-10 h-10 bg-[#EAD32C]/20 rounded-lg flex items-center justify-center mr-4">
+                        <MapPin className="w-5 h-5 text-[#B8860B]" />
                       </div>
                       <div>
                         <p className="text-sm text-slate-600">Location</p>
@@ -225,8 +225,8 @@ const FeaturedProjects = () => {
                     </div>
                     
                     <div className="flex items-center">
-                      <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                        <Clock className="w-5 h-5 text-blue-600" />
+                      <div className="w-10 h-10 bg-[#EAD32C]/20 rounded-lg flex items-center justify-center mr-4">
+                        <Clock className="w-5 h-5 text-[#B8860B]" />
                       </div>
                       <div>
                         <p className="text-sm text-slate-600">Timeline</p>
@@ -235,8 +235,8 @@ const FeaturedProjects = () => {
                     </div>
                     
                     <div className="flex items-center">
-                      <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
-                        <DollarSign className="w-5 h-5 text-blue-600" />
+                      <div className="w-10 h-10 bg-[#EAD32C]/20 rounded-lg flex items-center justify-center mr-4">
+                        <DollarSign className="w-5 h-5 text-[#B8860B]" />
                       </div>
                       <div>
                         <p className="text-sm text-slate-600">Investment</p>
@@ -246,7 +246,7 @@ const FeaturedProjects = () => {
                   </div>
 
                   <div className="mt-8 pt-6 border-t border-slate-200">
-                    <Button variant="outline" className="w-full border-blue-200 text-blue-600 hover:bg-blue-50">
+                    <Button variant="outline" className="w-full border-[#EAD32C]/30 text-[#B8860B] hover:bg-[#EAD32C]/10">
                       Get Similar Quote
                     </Button>
                   </div>
@@ -264,7 +264,7 @@ const FeaturedProjects = () => {
               onClick={() => setCurrentProject(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentProject 
-                  ? 'bg-blue-600 w-8' 
+                  ? 'bg-[#EAD32C] w-8' 
                   : 'bg-slate-300 hover:bg-slate-400'
               }`}
               aria-label={`View project ${index + 1}`}
